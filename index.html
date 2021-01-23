@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Work of Andrei</title>
+        <meta name="description" content="Andrei Stoica's Personal Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Styling -->
+        <link rel="icon" type="image/png" href="assets/icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Grain -->
+        <img id='grain' src='assets/Grain-Texture-06.png' alt='background grain'> 
+
+        <!-- Header Portion -->
+        <header>
+            <div class='top-bar'>
+                <div>
+                    <img class='logo' src="assets/personal-logo.png" alt="Andrei's Personal Logo">
+                </div>
+
+                <span class='top-nav'>
+                    <span>
+                        <a href="index.html">Home</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a>Photo</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a target="_blank" href="https://drive.google.com/file/d/1fkWOWaSfDvHO-pDHKxpllDvL3IOfQyoe/view?usp=sharing">Resume</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a href='about.html'>About</a>
+                    </span>
+                </span>
+            </div>
+        </header>
+
+        <!-- Body Portion -->
+        <div class='main'>
+            <div class='work-list'>
+                <h1>Recent Work</h1>
+                
+                <div class='list'>
+                    <span>
+                        <a href='work/candor.html'>Candor.co,</a>
+                        <p>2020;</p>
+                    </span>
+
+                    <span>
+                        <a href='work/ffc.html'>FoodFutureCo,</a>
+                        <p>2020;</p>
+                    </span>
+
+                    <span>
+                        <a href='work/autodesk.html'>Autodesk,</a>
+                        <p>2019;</p>
+                    </span>
+
+                    <span>
+                        <a href='work/locl.html'>Locl.io,</a>
+                        <p>2019;</p>
+                    </span>
+
+                    <span>
+                        <a href='work/xxcelerate.html'>XXcelerate Fund,</a>
+                        <p>2018;</p>
+                    </span>
+                </div>
+
+            </div>
+            
+            <div>
+                <h1>Recent Projects</h1>
+                
+                <div class='list'>
+                    <span>
+                        <a target="_blank" href='https://andreisthoughts.substack.com/'>Writing;</a>
+                    </span>
+
+                    <span>
+                        <a href=''>Strategy;</a>
+                    </span>
+
+                    <span>
+                        <a target="_blank" href='https://github.com/andreicstoica'>Code;</a>
+                    </span>
+
+                    <span>
+                        <a href=''>Design;</a>
+                    </span>
+
+                    <span>
+                        <a target="_blank" href='https://andreisthoughts.substack.com/p/lessons-on-living'>My Story;</a>
+                    </span>
+
+                </div>
+                
+            </div>   
+
+        </div>
+
+        <!-- Footer Portion -->
+        <footer class='bottom-bar'>
+            <span>
+                <p>&#169; andrei stoica</p>
+            </span>
+
+            <span class='bottom-nav'>
+                <span>
+                    <a target="_blank" href="https://twitter.com/andreistoica_">Twitter</a>
+                </span>
+                <span>
+                    <p style='display: inline'>/</p>
+                </span>
+                <span>
+                    <a target='_blank' href='https://www.instagram.com/adr.stc/'>Instagram</a>
+                </span>
+                <span>
+                    <p style='display: inline'>/</p>
+                </span>
+                <span>
+                    <a target="_blank" href="https://www.linkedin.com/in/andrei-c-stoica/">LinkedIn</a>
+                </span>
+            </span>
+        </footer>
+
+        <!-- Cursor -->
+        <div class='cursor'></div>
+
+        <script>
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', e => {
+                cursor.setAttribute('style', "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+/* High Level Adjustments */
+@keyframes bgcolor {
+    0% {
+        background-color: #DEEAFE;
+    }
+
+    33% {
+        background-color: #d3d9d1;
+    }
+
+    66% {
+        background-color: #FFE2E2;
+    }
+
+    100% {
+        background-color: #DEEAFE;
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 40s infinite;
+    animation: bgcolor 40s infinite;
+    
+    margin: 0;
+    height: 100vh;
+    cursor: none;
+}
+
+@font-face {
+    font-family: "Karrik-Regular";
+    src: url("../assets/Karrik-Regular.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../webfonts/fa-solid-900.eot");
+    src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    background-color:#070E1F;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 175ms;
+    transition-timing-function: ease-out;
+}
+
+:hover{
+    cursor: none;
+}
+
+/* Header Adjustments */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5vh 5vw 0 5vw;
+    opacity: 100;
+    margin: 0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.top-nav > span {
+    padding: 0 .75em 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.top-nav > span > a, p {
+    color: #4374FC;
+    font-family: "Karrik-Regular";
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.top-nav > span > a:hover {
+    font-style: italic;
+    color: #515e4d;
+}
+
+.logo {
+    height: auto;
+    width: 10vw;
+}
+
+/* Body Adjustments */
+.row {
+    display: flex;
+    padding: 10vh 20vw 0 20vw;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 70%;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #070E1F;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.1em;
+    letter-spacing: .01em;
+
+    padding: 0 0 .1em 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Karrik-Regular", sans-serif;
+    font-size: 1.33em;
+    color: #4374FC;
+    padding: 0 0 .1em 0;
+    margin: 0;
+}
+
+.left > a {
+    font-family: "Karrik-Regular", sans-serif;
+    font-size: 1.33em;
+    color: #4374FC;
+    padding: 0 0 .1em 0;
+    margin: 0;
+}
+
+.left a:hover {
+    font-style: italic;
+    color: #515e4d;
+}
+
+.right > p > a {
+    font-family: "Karrik-Regular", sans-serif;
+    font-size: 1em;
+    color: #4374FC;
+    padding: 0 0 .1em 0;
+    margin: 0;
+}
+
+.right a:hover {
+    font-style: italic;
+    color: #515e4d;
+}
+
+.right > p {
+    font-family: 'Karrik-Regular', sans-serif;
+    color: #070E1F;
+    font-size: 1.5em;
+    padding: 0 0 0 2em;
+    margin: 0;
+}
+
+/* Footer Adjustments */
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw 0 5vw;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-nav > span {
+    padding: 0 .75em 0 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.bottom-nav > span > p, a {
+    color: #4374FC;
+    font-family: "Karrik-Regular";
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.bottom-nav > span > a:hover {
+    font-style: italic;
+    color: #515e4d;
+}

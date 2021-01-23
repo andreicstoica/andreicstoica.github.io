@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Andrei <> Autodesk</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+        <link rel="stylesheet" href="work.css">
+        <link rel="icon" type="image/png" href="../assets/icon.png">
+        <script src="https://kit.fontawesome.com/ca3746e5bc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Cursor -->
+        <div class='cursor'></div>
+
+        <!-- Header Portion -->
+        <header>
+            <div class='top-bar'>
+                <div>
+                    <img class='logo' src="../assets/personal-logo.png" alt="Andrei's Personal Logo">
+                </div>
+
+                <span class='top-nav'>
+                    <span>
+                        <a href="../index.html">Home</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a>Photo</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a target="_blank" href="https://drive.google.com/file/d/1fkWOWaSfDvHO-pDHKxpllDvL3IOfQyoe/view?usp=sharing">Resume</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a href='../about.html'>About</a>
+                    </span>
+                </span>
+            </div>
+        </header>
+
+        <!-- Body Portion -->
+
+        <div class='row'>
+            <span class='left'>
+                <h1>- Project Name</h1>
+                <a href="http://synthesis.autodesk.com/" target="_blank">Autodesk Synthesis <i class="fas fa-external-link-square-alt"></i></a>
+                <br>
+                <br>
+                <h1>- Roles</h2>
+                <h2>Product Manager</h2>
+                <h2>Product Marketing Manager</h2>
+                <h2>UX Researcher</h2>
+                <h2>UX Designer</h2>
+                <br>
+                <h1>- Date</h1>
+                <h2>Jun. '19  -  Aug. '19</h2>
+            </span>
+
+            <span class='right'>
+                <p>Synthesis is an Autodesk simulator and emulator targeted towards high-school robotics students. Each summer, a group of around 12 high-school and college interns continue working on the product.
+                    <br> <br> Because of the small nature of the team, I had three main roles. Officially in charge of marketing and everything 'non-dev,' I also managed the user side of the product. I organized 'Autodesk Days' (pictured below) in Portland, Michigan, Montreal, and online. Over 100 students joined us in these feedback sessions during summer break – their feedback inspired a UI/UX redesign, which I helped lead.
+                    <br> <br> I also worked on a few side projects – one of which was helping design a new museum exhibit at the Oregon Museum of Science and Industry (OMSI). OMSI wanted to inspire elementary school aged kids to think about design, so they approached Autodesk to make a custom library in Tinkercad. This would run on iPads in the exhibit, where kids could easily drag and drop different furniture pieces to create environments that 'fostered communication.' <a target='_blank' href='https://blog.tinkercad.com/omsi-tinkercad-partner-on-innovation-stations'> Click on this link to see Tinkercad's official blog post <i class="fas fa-external-link-square-alt"></i></a>.
+                    <br> <br> Working alongside Autodesk employees stationed all over the world taught me numerous lessons on PMing, UX research, and UI design that I will carry with me into my professional career. 
+                    <br> <br> <b>Update June 2020:</b> I also made a quick 'Day in the Life' type video to advertise the internship program, which is now live! <a target='_blank' href='https://youtu.be/TGAJW3aCo8Y'> Click on this link to see the YouTube video <i class="fas fa-external-link-square-alt"></i></a>.
+                </p>
+            </span>
+        </div>
+
+        <!-- Footer Portion -->
+        <footer class='bottom-bar'>
+            <span>
+                <p>&#169; andrei stoica</p>
+            </span>
+
+            <span class='bottom-nav'>
+                <span>
+                    <a target="_blank" href="https://twitter.com/andreistoica_">Twitter</a>
+                </span>
+                <span>
+                    <p style='display: inline'>/</p>
+                </span>
+                <span>
+                    <a target='_blank' href='https://www.instagram.com/adr.stc/'>Instagram</a>
+                </span>
+                <span>
+                    <p style='display: inline'>/</p>
+                </span>
+                <span>
+                    <a target="_blank" href="https://www.linkedin.com/in/andrei-c-stoica/">LinkedIn</a>
+                </span>
+            </span>
+        </footer>
+
+        <script>
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', e => {
+                cursor.setAttribute('style', "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+            })
+        </script>
+    </body>
+</html>

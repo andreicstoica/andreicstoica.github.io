@@ -36,6 +36,10 @@ body {
     transition-timing-function: ease-out;
 }
 
+:hover {
+    cursor: none;
+}
+
 @font-face {
     font-family: "Karrik-Regular";
     src: url("assets/Karrik-Regular.ttf") format('truetype');
@@ -74,7 +78,7 @@ body {
 .top-bar {
     display: flex;
     justify-content: space-between;
-    padding: 2.5vh 5vw 0 5vw;
+    padding: 7.5vh 5vw 0 5vw;
     margin: 0;
 }
 
@@ -101,7 +105,6 @@ body {
 .top-nav > span > a:hover {
     font-style: italic;
     color: #515e4d;
-    cursor: none;
 }
 
 .logo {
@@ -159,7 +162,6 @@ h1 {
 .list > span > a:hover {
     font-style: italic;
     color: #515e4d;
-    cursor: none;
 }
 
 .work-list {
@@ -170,19 +172,20 @@ h1 {
 .bottom-bar {
     display: flex;
     justify-content: space-between;
-    padding: 81vh 5vw 0 5vw;
-    position: relative;
+    position: absolute;
+    bottom: 7.5vh;
     vertical-align: bottom;
+    padding: 0 5vw 0 5vw;
+    width: 90vw;
 }
 
 .bottom-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .bottom-nav > span {
     padding: 0 .75em 0 0;
-    text-align: center;
     display: inline-block;
     vertical-align: middle;
     margin: auto;
@@ -198,6 +201,5 @@ h1 {
 .bottom-nav > span > a:hover {
     font-style: italic;
     color: #515e4d;
-    cursor: none;
 }
 

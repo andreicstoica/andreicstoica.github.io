@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Andrei <> FoodFutureCo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+        <link rel="stylesheet" href="work.css">
+        <link rel="icon" type="image/png" href="../assets/icon.png">
+        <script src="https://kit.fontawesome.com/ca3746e5bc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Cursor -->
+        <div class='cursor'></div>
+
+        <!-- Header Portion -->
+        <header>
+            <div class='top-bar'>
+                <div>
+                    <img class='logo' src="../assets/personal-logo.png" alt="Andrei's Personal Logo">
+                </div>
+
+                <span class='top-nav'>
+                    <span>
+                        <a href="../index.html">Home</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a>Photo</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a target="_blank" href="https://drive.google.com/file/d/1fkWOWaSfDvHO-pDHKxpllDvL3IOfQyoe/view?usp=sharing">Resume</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a href='../about.html'>About</a>
+                    </span>
+                </span>
+            </div>
+        </header>
+
+        <!-- Body Portion -->
+
+        <div class='row'>
+            <span class='left'>
+                <h1>- Project Name</h1>
+                <a href="https://www.foodfuture.co/" target="_blank">FoodFutureCo <i class="fas fa-external-link-square-alt"></i></a>
+                <br>
+                <br>
+                <h1>- Roles</h2>
+                <h2>VC Researcher</h2>
+                <h2>Cohort Educator</h2>
+                <h2>Operations</h2>
+                <br>
+                <h1>- Date</h1>
+                <h2>Feb. '19  -  May. '19</h2>
+            </span>
+
+            <span class='right'>
+                <p>Food Future Co is an accelerator in New York that helps early stage, food tech startups in North America.
+                    <br> <br> I was initially hired to set up a new accelerator program in Barcelona. Soon after my onboarding, Covid-19 really started to take hold in Europe and Spain went into lock down. A few weeks later and the North American program transitioned 100% online as well, and I got sent home from New York. For the remainder of the semester, I pivoted into an operations support role.
+                </p>
+            </span>
+        </div>
+
+        <!-- Footer Portion -->
+        <footer class='bottom-bar'>
+            <span>
+                <p>&#169; andrei stoica</p>
+            </span>
+
+            <span class='bottom-nav'>
+                <span>
+                    <a target="_blank" href="https://twitter.com/andreistoica_">Twitter</a>
+                </span>
+                <span>
+                    <p style='display: inline'>/</p>
+                </span>
+                <span>
+                    <a target='_blank' href='https://www.instagram.com/adr.stc/'>Instagram</a>
+                </span>
+                <span>
+                    <p style='display: inline'>/</p>
+                </span>
+                <span>
+                    <a target="_blank" href="https://www.linkedin.com/in/andrei-c-stoica/">LinkedIn</a>
+                </span>
+            </span>
+        </footer>
+
+        <script>
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', e => {
+                cursor.setAttribute('style', "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+            })
+        </script>
+    </body>
+</html>

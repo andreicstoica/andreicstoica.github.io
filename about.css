@@ -51,7 +51,7 @@ body {
 .top-bar {
     display: flex;
     justify-content: space-between;
-    padding: 2.5vh 5vw 0 5vw;
+    padding: 7.5vh 5vw 0 5vw;
     margin: 0;
 }
 
@@ -85,13 +85,78 @@ body {
     width: 10vw;
 }
 
+/* Body Adjustments */
+h1 {
+    text-transform: uppercase;
+    color: #4374FC;
+    font-family: "Karrik-Regular";
+    font-size: 1.33em;
+    letter-spacing: .05em;
+}
+
+.main {
+    display: block;
+
+    /* vertically centering the main body */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.row {
+    display: flex;
+    padding: 0 5vw 0 5vw;
+}
+
+.left {
+    width: 60%;
+    padding-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.right {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.left > p {
+    font-family: 'Karrik-Regular', sans-serif;
+    color: #070E1F;
+    font-size: 1.33em;
+    margin: 0;
+}
+
+.left > p > a {
+    font-family: "Karrik-Regular", sans-serif;
+    font-size: 1em;
+    color: #4374FC;
+    padding: 0 0 .1em 0;
+    margin: 0;
+}
+
+#signup {
+    width: 35vw;
+    height: 35vh;
+
+    border: 1px solid #EEE; 
+    background:white;
+}
+
 /* Footer Adjustments */
 .bottom-bar {
     display: flex;
+    position: absolute;
     justify-content: space-between;
-    padding: 81vh 5vw 0 5vw;
-    position: relative;
+    bottom: 7.5vh;
     vertical-align: bottom;
+    padding: 0 5vw 0 5vw;
+    width: 90vw;
 }
 
 .bottom-nav {

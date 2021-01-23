@@ -59,7 +59,7 @@ body {
 .top-bar {
     display: flex;
     justify-content: space-between;
-    padding: 2.5vh 5vw 0 5vw;
+    padding: 7.5vh 5vw 0 5vw;
     opacity: 100;
     margin: 0;
 }
@@ -97,7 +97,7 @@ body {
 /* Body Adjustments */
 .row {
     display: flex;
-    padding: 10vh 20vw 0 20vw;
+    padding: 10vh 20vw 10vh 20vw;
 }
 
 .left {
@@ -106,6 +106,7 @@ body {
 
 .right {
     width: 70%;
+    margin: 0 4em 0 0;
 }
 
 h1 {
@@ -135,6 +136,10 @@ h2 {
     margin: 0;
 }
 
+.left > a, h2 {
+    padding-bottom: .15em;
+}
+
 .left a:hover {
     font-style: italic;
     color: #515e4d;
@@ -156,28 +161,34 @@ h2 {
 .right > p {
     font-family: 'Karrik-Regular', sans-serif;
     color: #070E1F;
-    font-size: 1.5em;
+    font-size: 1.33em;
     padding: 0 0 0 2em;
     margin: 0;
+}
+
+#candor-image {
+    padding: 2em 5vw 0 0;
+    width: 40vw;
 }
 
 /* Footer Adjustments */
 .bottom-bar {
     display: flex;
+    position: absolute;
     justify-content: space-between;
-    padding: 0 5vw 0 5vw;
-    position: relative;
+    bottom: 7.5vh;
     vertical-align: bottom;
+    padding: 0 5vw 0 5vw;
+    width: 90vw;
 }
 
 .bottom-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .bottom-nav > span {
     padding: 0 .75em 0 0;
-    text-align: center;
     display: inline-block;
     vertical-align: middle;
     margin: auto;

@@ -27,12 +27,12 @@ body {
 }
 
 .cursor {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background-color:#070E1F;
     border-radius: 50%;
     position: absolute;
-    transition-duration: 175ms;
+    transition-duration: 125ms;
     transition-timing-function: ease-out;
 }
 
@@ -66,13 +66,6 @@ body {
 
     animation: grainjiggle .25s steps(5) infinite alternate; 
 }
-
-/* hr {
-    margin: 0;
-    padding: 0;
-    background-color:#515e4d;
-    height: .33vh;
-} */
 
 /* Header Adjustments */
 .top-bar {

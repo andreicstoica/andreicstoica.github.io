@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrei <> Design</title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Andrei <> Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+        <link rel="stylesheet" href="project.css">
+        <link rel="icon" type="image/png" href="../assets/icon.png">
+        <script src="https://kit.fontawesome.com/ca3746e5bc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Cursor -->
+        <div class='cursor'></div>
+
+        <!-- Header Portion -->
+        <header>
+            <div class='top-bar'>
+                <div>
+                    <img class='logo' src="../assets/personal-logo.png" alt="Andrei's Personal Logo">
+                </div>
+
+                <span class='top-nav'>
+                    <span>
+                        <a href="../index.html">Home</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a>Photo</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a target="_blank" href="https://drive.google.com/file/d/1fkWOWaSfDvHO-pDHKxpllDvL3IOfQyoe/view?usp=sharing">Resume</a>
+                    </span>
+                    <span>
+                        <p style='display: inline'>/</p>
+                    </span>
+                    <span>
+                        <a href='../about.html'>About</a>
+                    </span>
+                </span>
+            </div>
+        </header>
+
+        <div class='main'>
+            <h1>Design Challenge</h1>
+            <p>I improved my Figma skills by doing a week-long design challenge. Each day, I picked 2 random fonts, colors, and design idea and went to work! Below are some highlights:</p>
+
+            <div class='wrapper'>
+                <div class='grid-item'>
+                    <h2>- App Icon</h2>
+                    <img src='app-icon.png' width='400vh'>
+                </div>
     
-</body>
+                <div class='grid-item'>
+                    <h2>- Food Waste App</h2>
+                    <img src='foodwaste-app.png' width='560vh'>
+                </div>
+    
+                <div class='grid-item'>
+                    <h2>- Transit App</h2>
+                    <img src='transit-app.png' width='400vh'>
+                </div>
+    
+                <div class='grid-item'>
+                    <h2>- Calculator</h2>
+                    <img src='calculator.png' width='200vh'>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Portion -->
+        <footer class='bottom-bar'>
+            <span>
+                <p>&#169; andrei stoica</p>
+            </span>
+
+            <span class='bottom-nav'>
+                <span>
+                    <a target="_blank" href="https://twitter.com/andreistoica_">Twitter</a>
+                </span>
+                <span>
+                    <p style='display: inline'>/</p>
+                </span>
+                <span>
+                    <a target='_blank' href='https://www.instagram.com/adr.stc/'>Instagram</a>
+                </span>
+                <span>
+                    <p style='display: inline'>/</p>
+                </span>
+                <span>
+                    <a target="_blank" href="https://www.linkedin.com/in/andrei-c-stoica/">LinkedIn</a>
+                </span>
+            </span>
+        </footer>
+
+        <script>
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', e => {
+                cursor.setAttribute('style', "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+            })
+        </script>
+    </body>
 </html>

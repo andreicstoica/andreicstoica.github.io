@@ -18,6 +18,7 @@
 }
 
 body {
+    /* background gradient changes */
     -webkit-animation: bgcolor 40s infinite;
     animation: bgcolor 40s infinite;
     
@@ -174,7 +175,7 @@ h2 {
 /* Footer Adjustments */
 .bottom-bar {
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: space-between;
     bottom: 7.5vh;
     vertical-align: bottom;

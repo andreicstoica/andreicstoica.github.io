@@ -32,7 +32,7 @@ body {
     background-color:#070E1F;
     border-radius: 50%;
     position: absolute;
-    transition-duration: 125ms;
+    transition-duration: 100ms;
     transition-timing-function: ease-out;
 }
 
@@ -45,26 +45,6 @@ body {
     src: url("assets/Karrik-Regular.ttf") format('truetype');
     font-weight: bold;
     font-style: normal;
-}
-
-@keyframes grainjiggle {
-    0% { left: 0; }
-    33% { left: .2vw; }
-    50% { left: .1vw; rotate: 15deg; }
-    66% { left: .05vw; top: .2vh}
-    100% { left: 0; top: 0; rotate: 0; }
-} 
-
-#grain {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: .4;
-
-    animation: grainjiggle .25s steps(5) infinite alternate; 
 }
 
 /* Header Adjustments */

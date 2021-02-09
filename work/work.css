@@ -176,6 +176,29 @@ h2 {
     width: 40vw;
 }
 
+.wrapper > div > h2 {
+    text-transform: uppercase;
+    color: #070E1F;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.1em;
+    letter-spacing: .01em;
+
+    margin: 0;
+    padding: 0 0 1vh 0;
+}
+
+.wrapper {
+    margin-top: -12vh;
+    display: grid;
+    grid-gap: 2.5vw 5vh;
+    grid-template-columns: repeat(2, 30vw);
+}
+
+#video {
+    height: 40vh;
+    width: 26vw;
+}
+
 /* Footer Adjustments */
 .bottom-bar {
     display: flex;

@@ -48,6 +48,11 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Lumber Sans";
+    src: url("LumberSansTest.otf") format('opentype');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
 
 @font-face {
@@ -135,20 +140,38 @@ iframe {
     margin: 0;
 }
 
+.main > div > img {
+    width: 100%;
+    height: auto;
+}
+
+.main > p > a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #4374FC;
+    padding: 0 0 .1em 0;
+    margin: 0;
+}
+
+.main > p > a:hover {
+    font-style: italic;
+    color: #515e4d;
+}
+
 .wrapper {
     display: grid;
     grid-gap: 2.5vw 5vh;
     grid-template-columns: repeat(2, 30vw);
 }
 
-.main > div > img {
-    width: 100%;
-    height: auto;
-}
-
 #amend {
     margin: 0;
     padding: 0;
+}
+
+#lumbersans{
+    font-family: "Lumber Sans";
 }
 
 /* Footer Adjustments */

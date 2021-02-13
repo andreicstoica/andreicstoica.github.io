@@ -50,7 +50,7 @@ body {
 
 @font-face {
     font-family: "Lumber Sans";
-    src: url("LumberSansTest.otf") format('opentype');
+    src: url("../assets/LumberSansRegular.woff") format('woff');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
@@ -110,7 +110,7 @@ body {
 h1 {
     text-transform: uppercase;
     color: #4374FC;
-    font-family: "Karrik-Regular";
+    font-family: "Lumber Sans";
     font-size: 1.33em;
     letter-spacing: .05em;
 }
@@ -168,11 +168,6 @@ iframe {
 #amend {
     margin: 0;
     padding: 0;
-}
-
-#lumbersans{
-    font-family: "Lumber Sans";
-    font-size: 2em;
 }
 
 /* Footer Adjustments */

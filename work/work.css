@@ -181,6 +181,12 @@ h2 {
     width: 40vw;
 }
 
+#blocpower-image {
+    padding: 2.5em;
+    width: 40vw;
+
+}
+
 .wrapper > div > h2 {
     text-transform: uppercase;
     color: #070E1F;

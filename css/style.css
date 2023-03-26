@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Serif:ital@1&display=swap');
+
+@font-face {
+    font-family: "Lumber Sans";
+    src: url(../assets/fonts/LumberSansTestRegular.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.25rem;    /* Footer height */
+    margin: 0 10% 0 10%;
+  }
+
+p, li, a {
+    color: black;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: dodgerblue;
+    font-family: 'Lumber Sans';
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.nav__links > li > a {
+    border-bottom: .1em solid dodgerblue;
+    cursor: pointer;
+}
+
+.nav__links > li > a:hover {
+    border-bottom: none;
+    padding-bottom: 2px;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift .5s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='dodgerblue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E");
+}
+
+.splash > a {
+    border-bottom: .1em solid dodgerblue;
+    cursor: pointer;
+}
+
+.splash > a:hover {
+    border-bottom: none;
+    padding-bottom: 2px;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift .5s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='dodgerblue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E");
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 0 0;
+}
+
+header > img {
+    height: 2.5em;
+    width: auto;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+nav > .nav__links {
+    margin-top: .75em;
+}
+
+.nav__links > li {
+    display: inline-block;
+    padding: 0 .5em;
+}
+
+.nav__links > li > a {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.splash > p, a {
+    font-size: .9em;
+}
+
+.splash {
+    margin-top: 2em;
+}
+
+.splash > h1 {
+    margin-bottom: .25em;
+}
+
+.splash > p {
+    margin-bottom: .5em;
+}
+
+.accordion {
+    margin: 2em auto;
+}
+
+.accordion > li {
+    list-style: none;
+    padding: .8em;
+    margin: 1em 0;
+    border-radius: .2em;
+    box-shadow: .5em .5em .75em -.25em rgba(0, 0, 0, .1),
+                -.5em -.5em .75em -.25em rgba(255, 255, 255, .5)
+}
+
+.accordion > li > label {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+label::before {
+    content: '+';
+    margin-right: 0.25em;
+    font-size: 1.25em;
+    color: dodgerblue;
+    font-weight: 700;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.33s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 100%;
+    padding-top: .5em;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+    content: '-';
+}
+
+.work-labels {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.work-labels > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-labels > p {
+    font-size: .8em;
+}
+
+.work-labels > div > ul > li > p {
+    font-size: .8em;
+    padding-left: 0.5em;
+}
+
+.work-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-details > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-details > a, p {
+    font-size: .8em;
+}
+
+.work-details > a:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.work-details > div > ul > li > p {
+    font-size: .8em;
+    padding-left: 0.5em;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 2.25rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% 1.5% 10%;
+}
+
+@media screen and (max-width: 740px) {
+    a, p, header, footer, section, content, ul, li {
+        font-size: .7em;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: .7em;
+    }
+
+    .work-details > a, .work-labels > p, .work-labels > div > ul > li > p, .work-details > div > ul > li > p {
+        font-size: .5rem;
+    }
+
+    .work-details > a, .work-details > p {
+        flex-wrap: wrap;
+        padding: .15em;
+    }
+}

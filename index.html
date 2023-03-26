@@ -1,152 +1,270 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Andrei <> Home</title>
-        <meta name="description" content="Andrei Stoica's Personal Website">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrei's Portfolio</title>
+    <meta name="description" content="Andrei Stoica's personal portfolio website.">
+    <meta name="author" content="Andrei Stoica">
+    <link href='assets/img/favicon.png' rel='icon' />
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <!-- Styling -->
-        <link rel="icon" type="image/png" href="assets/icon.png">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <img src='assets/img/icon.png' alt='Andrei Stoica Logo Icon'>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href='/'>Home</a></li>
+                        <li><a href='https://andreisthoughts.substack.com/'>Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+            <section class="splash">
+                <h1>About Me</h1>
+                <p>Hi, my name is Andrei Stoica. I'm an atypical techno-optimist working to help people directly, understanding that technological production is part of a broader system. Having pursued an individualized major titled 'Human Computer Interaction and Ethical Innovation Systems,' I was able to mix courses in the domains of computer science, hardware, design, ecology, and political economy. I am most interested in the intersections of all of these fields. Below you will find reflections on my previous work experience and other projects, which are just as valuable.</p>
+                <a target="_blank" href="https://andreisthoughts.substack.com/p/lessons-on-living">More about my upbringing ☞</a>
+            </section>
+        
+            <ul class="accordion">
+                <li>
+                    <input type="radio" name="accordion" id="first" checked>
+                    <label for="first"><h1>Work Experience</h1></label>
+                    <div class="content">
+                        <div class="work-labels">
+                            <p>Employer</p>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Industry</p></li>
+                                    <li><p>Date</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        
+                        <div class="work-details">
+                            <a href="work/wbd.html">Warner Bros. Discovery</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Tech</p></li>
+                                    <li><p>2022</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a href="work/anthos.html">Anthos</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>VC</p></li>
+                                    <li><p>2021</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a href="/work/blocpower.html">BlocPower</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Tech</p></li>
+                                    <li><p>2021</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a href="work/candor.html">Candor</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Tech</p></li>
+                                    <li><p>2020</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a href="work/ffc.html">Food Future Co</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>VC</p></li>
+                                    <li><p>2020</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a href="work/autodesk.html">Autodesk</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Tech</p></li>
+                                    <li><p>2019</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a href="work/locl.html">Locl.io</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Tech</p></li>
+                                    <li><p>2019</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a target="_blank" href="https://www.xceleratewomen.org/">Xcelerate Women</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>VC</p></li>
+                                    <li><p>2018</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </li>
 
-    <body>
+                                <li>
+                    <input type="radio" name="accordion" id="second">
+                    <label for="second"><h1>Other Projects</h1></label>
+                    <div class="content">
+                        <div class="work-labels">
+                            <p>Name</p>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Type</p></li>
+                                    <li><p>Date</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
 
-        <!-- Cursor -->
-        <div class='cursor'></div>
-
-        <!-- Header Portion -->
-        <header>
-            <div class='top-bar'>
-                <div>
-                    <img class='logo' src="assets/personal-logo.png" alt="Andrei's Personal Logo">
-                </div>
-
-                <span class='top-nav'>
-                    <span>
-                        <a href="index.html">Home</a>
-                    </span>
-                    <span>
-                        <p style='display: inline'>/</p>
-                    </span>
-                    <span>
-                        <a target='_blank' href='https://mmm.page/andreistoica.main'>Photo</a>
-                    </span>
-                    <span>
-                        <p style='display: inline'>/</p>
-                    </span>
-                    <span>
-                        <a target="_blank" href="https://drive.google.com/file/d/1JXcepqOrLtQmJKCf9q7uhzW8rq4HEVdT/view?usp=sharing">Resume</a>
-                    </span>
-                    <span>
-                        <p style='display: inline'>/</p>
-                    </span>
-                    <span>
-                        <a href='about.html'>About</a>
-                    </span>
-                </span>
-            </div>
-        </header>
-
-        <!-- Body Portion -->
-        <div class='main'>
-            <div class='work-list'>
-                <h1>Recent Work</h1>
-                
-                <div class='list'>
-                    <span>
-                        <a href='work/blocpower.html'>BlocPower,</a>
-                        <p>2021;</p>
-                    </span>
-
-                    <span>
-                        <a href='work/anthos.html'>Anthos,</a>
-                        <p>2021;</p>
-                    </span>
-
-                    <span>
-                        <a href='work/candor.html'>Candor.co,</a>
-                        <p>2020;</p>
-                    </span>
-
-                    <span>
-                        <a href='work/autodesk.html'>Autodesk,</a>
-                        <p>2019;</p>
-                    </span>
-
-                    <span>
-                        <a href='work/locl.html'>Locl.io,</a>
-                        <p>2019;</p>
-                    </span>
-
-                    <span>
-                        <a href='work/xxcelerate.html'>XXcelerate Fund,</a>
-                        <p>2018;</p>
-                    </span>
-
-                    <span>
-                        <a href='work/washpod.html'>WashPod,</a>
-                        <p>2017;</p>
-                    </span>
-                </div>
-
-            </div>
-            
-            <div>
-                <h1>Recent Projects</h1>
-                <div class='list'>
-                    <span>
-                        <a target="_blank" href='https://andreisthoughts.substack.com/'>Writing;</a>
-                    </span>
-
-                    <span>
-                        <a href='projects/strategy.html'>Strategy;</a>
-                    </span>
-
-                    <span>
-                        <a target="_blank" href='https://github.com/andreicstoica'>Code;</a>
-                    </span>
-
-                    <span>
-                        <a href='projects/design.html'>Design;</a>
-                    </span>
-                </div>  
-            </div>   
+                        <div class="work-details">
+                            <a target="_blank" href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2950c722-847d-49c7-9f60-9e384c5f4a6f_1750x1479.png">Specialty Barista Training</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Food & Beverage</p></li>
+                                    <li><p>------</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a target="_blank" href="https://andreistoica.notion.site/Packaging-Archive-14bd4ec52d644149b04f8b38bdaf61a7">Packaging Archive</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Design</p></li>
+                                    <li><p>------</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a target="_blank" href="https://www.figma.com/proto/2zJPa89I2MEecDImCSZ2MA/SEPL?page-id=0%3A1&node-id=1-2&viewport=356%2C340%2C0.25&scaling=contain">Solar Enery Powered Lamp (SEPL)</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Product Design, Electronics</p></li>
+                                    <li><p>2023</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a target="_blank" href="https://drive.google.com/file/d/11bj38OILFYXIuqiqseSOlCD43PP00uPz/view?usp=sharing"">Undergraduate Rationale</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Writing</p></li>
+                                    <li><p>2022</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a target="_blank" href="https://andreisthoughts.substack.com/p/quality">My Politics of Quality, Pirsig's Metaphysics of Quality</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Writing</p></li>
+                                    <li><p>2022</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a target="_blank" href="https://www.figma.com/proto/ILOTHfXIYnPPIrpGyqwi06/RunChuck?page-id=0%3A1&node-id=1-19&viewport=-261%2C149%2C0.13&scaling=contain">RunChuck</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Interaction Design, Electronics</p></li>
+                                    <li><p>2021</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a href="/projects/lumber-sans.html">Lumber Sans</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Typography, Design History</p></li>
+                                    <li><p>2020</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a target="_blank" href="https://www.figma.com/proto/Q8FvR4NxpaLAOBsUzphO3w/South-Sister-Summit-Gallery?page-id=0%3A1&node-id=4-41&viewport=-2416%2C287%2C0.37&scaling=contain">South Sister Summit</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Photography</p></li>
+                                    <li><p>2020</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="work-details">
+                            <a href="projects/washpod.html">WashPod</a>
+                            <div>
+                                <ul class="nav__links">
+                                    <li><p>Ecological Design, Electrical</p></li>
+                                    <li><p>2018</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </li>
+            </ul>
         </div>
 
-        <!-- Footer Portion -->
-        <footer class='bottom-bar'>
-            <span>
-                <p>&#169; andrei stoica</p>
-            </span>
-
-            <span class='bottom-nav'>
-                <span>
-                    <a target="_blank" href="https://twitter.com/andreistoica_">Twitter</a>
-                </span>
-                <span>
-                    <p style='display: inline'>/</p>
-                </span>
-                <span>
-                    <a target='_blank' href='https://www.instagram.com/adr.stc/'>Instagram</a>
-                </span>
-                <span>
-                    <p style='display: inline'>/</p>
-                </span>
-                <span>
-                    <a target="_blank" href="https://www.linkedin.com/in/andrei-c-stoica/">LinkedIn</a>
-                </span>
-            </span>
+        <footer>
+            <div id="footer">
+                <p>Andrei Stoica &copy; 2023</p>
+                <div>
+                    <ul class="nav__links">
+                        <li><a target="_blank" href='https://www.linkedin.com/in/andrei-c-stoica/'>LinkedIn</a></li>
+                        <li><a target="_blank" href='https://drive.google.com/file/d/1_D9umwXcB8uub6E9MVQv7cyhvG252T3I/view?usp=share_link'>Resume</a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
-
-        <script>
-            const cursor = document.querySelector('.cursor');
-            document.addEventListener('mousemove', e => {
-                cursor.setAttribute('style', "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-            })
-        </script>
-    </body>
+    </div>
+</body>
 </html>

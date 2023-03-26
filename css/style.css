@@ -206,6 +206,10 @@ input[type="radio"] {
     padding: 0 10% 1.5% 10%;
 }
 
+#footer > p {
+    font-size: 1em;
+}
+
 @media screen and (max-width: 740px) {
     a, p, header, footer, section, content, ul, li {
         font-size: .7em;

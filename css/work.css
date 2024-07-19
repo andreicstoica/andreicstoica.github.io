@@ -53,34 +53,34 @@ a:hover {
 }
 
 #gallery {
-    line-height:0;
-    -webkit-column-count:1; /* split it into 5 columns */
-    -webkit-column-gap:.5em; /* give it a 5px gap between columns */
-    -moz-column-count:1;
-    -moz-column-gap:.5em;
-    column-count:1;
-    column-gap:.5em;
-
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space items evenly */
+    column-gap: 1em; /* Gap between columns */
     padding: 2em 0;
 }
 
 #gallery img {
-    width: 30em !important;
-    height: auto !important;
-    margin-bottom: .5em; /* to match column gap */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 #img-chunk {
-    padding-bottom: 1em;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack image and label vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    width: calc(50% - .5em); /* Adjust width for three columns with gap */
+    margin-bottom: 1em; /* Space between rows */
 }
 
 #img-chunk > p {
     font-size: .8em;
     text-transform: uppercase;
-    margin-bottom: 1em;
+    margin-top: 0.5em; /* Add top margin for spacing between image and text */
+    margin-bottom: 0; /* Remove bottom margin for better alignment */
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 25%) {
     .content {
         display: flex;
         flex-direction: column;
@@ -102,36 +102,9 @@ a:hover {
     }
 }
 
-#gallery-washpod {
-    line-height:0;
-    -webkit-column-count:2; /* split it into 5 columns */
-    -webkit-column-gap:.5em; /* give it a 5px gap between columns */
-    -moz-column-count:2;
-    -moz-column-gap:.5em;
-    column-count:2;
-    column-gap:.5em;
-
-    padding: 2em 0;
+#gallery iframe {
+    width: 100% !important; /* Make iframe responsive to match image width */
+    height: 100%; /* Set a specific height */
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+    border: none; /* Remove border if any */
 }
-
-#gallery-washpod img, iframe {
-    width: 20em !important;
-    height: auto !important;
-    margin-bottom: .5em; /* to match column gap */
-}
-
-#gallery-washpod iframe {
-    height: 13em !important;
-}
-
-@media screen and (max-width: 680px) {
-    #gallery-washpod{
-        -webkit-column-count:1; /* split it into 5 columns */
-        -webkit-column-gap:.5em; /* give it a 5px gap between columns */
-        -moz-column-count:1;
-        -moz-column-gap:.5em;
-        column-count:1;
-        column-gap:.5em;
-    }
-}
-
